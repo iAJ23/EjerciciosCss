@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 60px;
+    gap: 0px;
+    width: 450px;
+    max-width: 100%;
+}
+
+.container > .item:nth-child(1),
+.container > .item:nth-child(4) {
+    grid-column: span 2;
+}
+
+.item {
+    background-color: black;
+    border: 1px solid blue;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacada {
+    grid-column: span 2;
+}
+
+.amplia {
+    grid-column: span 2;
+}
+
+.item:hover {
+    background-color: rgb(48, 238, 30);
+}
